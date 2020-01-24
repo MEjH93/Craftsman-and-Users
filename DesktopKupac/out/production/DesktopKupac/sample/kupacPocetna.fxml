@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.collections.FXCollections?>
+<BorderPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
+
+    <top>
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea" >
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu text="Opcije" mnemonicParsing="false">
+                    <items>
+                        <MenuItem text="Licni podaci" mnemonicParsing="false" onAction="#licnipodaci"/>
+                    </items>
+                    <items>
+                        <MenuItem text="Moji majstori" mnemonicParsing="false" onAction="#mojimajstori"/>
+                    </items>
+                    <items>
+                        <MenuItem text="Moji zahtevi" mnemonicParsing="false" onAction="#mojizahtevi"/>
+                    </items>
+                    <items>
+                        <MenuItem text="Odjavi me" onAction="#nazad" mnemonicParsing="false"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</VBox>
+    </top>
+
+    <center>
+<GridPane
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="13" vgap="13">
+
+<Label text="Unesite podatke za pretragu">
+    <GridPane.rowIndex>0</GridPane.rowIndex>
+    <GridPane.columnIndex>2</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+
+<Label text="Ocena od" prefWidth="80">
+    <GridPane.rowIndex>1</GridPane.rowIndex>
+    <GridPane.columnIndex>0</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<Spinner fx:id="ocenaOd" min="0" max="10" prefWidth="150">
+    <GridPane.rowIndex>1</GridPane.rowIndex>
+    <GridPane.columnIndex>1</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</Spinner>
+<Label text="Ocena do" prefWidth="80">
+    <GridPane.rowIndex>1</GridPane.rowIndex>
+    <GridPane.columnIndex>3</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<Spinner fx:id="ocenaDo" min="0" max="10" prefWidth="150">
+    <GridPane.rowIndex>1</GridPane.rowIndex>
+    <GridPane.columnIndex>4</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</Spinner>
+
+<Label text="Iskustvo od" prefWidth="80">
+    <GridPane.rowIndex>2</GridPane.rowIndex>
+    <GridPane.columnIndex>0</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<Spinner fx:id="iskustvoOd" min="0" max="100" prefWidth="150">
+    <GridPane.rowIndex>2</GridPane.rowIndex>
+    <GridPane.columnIndex>1</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</Spinner>
+<Label text="Iskustvo do" prefWidth="80">
+    <GridPane.rowIndex>2</GridPane.rowIndex>
+    <GridPane.columnIndex>3</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<Spinner fx:id="iskustvoDo" min="0" max="100" prefWidth="150">
+    <GridPane.rowIndex>2</GridPane.rowIndex>
+    <GridPane.columnIndex>4</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</Spinner>
+
+<Label text="Cena od" prefWidth="80">
+    <GridPane.rowIndex>3</GridPane.rowIndex>
+    <GridPane.columnIndex>0</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<TextField fx:id="cenaOd" prefWidth="150">
+    <GridPane.rowIndex>3</GridPane.rowIndex>
+    <GridPane.columnIndex>1</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</TextField>
+<Label text="Cena do" prefWidth="80">
+    <GridPane.rowIndex>3</GridPane.rowIndex>
+    <GridPane.columnIndex>3</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<TextField fx:id="cenaDo" prefWidth="150">
+    <GridPane.rowIndex>3</GridPane.rowIndex>
+    <GridPane.columnIndex>4</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</TextField>
+
+<Label text="Datum od" prefWidth="80">
+    <GridPane.rowIndex>4</GridPane.rowIndex>
+    <GridPane.columnIndex>0</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<DatePicker fx:id="datumOd" prefWidth="150">
+    <GridPane.rowIndex>4</GridPane.rowIndex>
+    <GridPane.columnIndex>1</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</DatePicker>
+<Label text="Datum do" prefWidth="80">
+    <GridPane.rowIndex>4</GridPane.rowIndex>
+    <GridPane.columnIndex>3</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<DatePicker fx:id="datumDo" prefWidth="150">
+    <GridPane.rowIndex>4</GridPane.rowIndex>
+    <GridPane.columnIndex>4</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</DatePicker>
+
+<Label text="Posao" prefWidth="80">
+    <GridPane.rowIndex>5</GridPane.rowIndex>
+    <GridPane.columnIndex>0</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<TextField fx:id="posao" prefWidth="150">
+    <GridPane.rowIndex>5</GridPane.rowIndex>
+    <GridPane.columnIndex>1</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</TextField>
+<Label text="Spec. tehnike" prefWidth="80">
+    <GridPane.rowIndex>5</GridPane.rowIndex>
+    <GridPane.columnIndex>3</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<TextField fx:id="specijalneTehnike" prefWidth="150">
+    <GridPane.rowIndex>5</GridPane.rowIndex>
+    <GridPane.columnIndex>4</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</TextField>
+
+<Label text="Hitnost" prefWidth="80">
+    <GridPane.rowIndex>6</GridPane.rowIndex>
+    <GridPane.columnIndex>0</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+<CheckBox fx:id="hitnost">
+    <GridPane.rowIndex>6</GridPane.rowIndex>
+    <GridPane.columnIndex>1</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>left</GridPane.halignment>
+</CheckBox>
+
+
+
+<Button text="Pretrazi" onAction="#guest_pretraga" style="-fx-font-weight: bold; -fx-background-color: green; -fx-text-fill: white;">
+    <GridPane.rowIndex>7</GridPane.rowIndex>
+    <GridPane.columnIndex>2</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</Button>
+
+<TableView fx:id="tabela" maxHeight="100">
+    <placeholder>
+        <Label text="Nema podataka"/>
+    </placeholder>
+
+    <columns>
+        <TableColumn fx:id="kolona1" text="Korisnicko ime">
+            <cellValueFactory>
+                <PropertyValueFactory property="text"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+
+    <items>
+        <FXCollections fx:factory="observableArrayList">
+            <Button fx:id="Item1"/>
+            <Button fx:id="Item2"/>
+        </FXCollections>
+    </items>
+
+    <GridPane.rowIndex>8</GridPane.rowIndex>
+    <GridPane.columnIndex>2</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</TableView>
+
+<Button text="Detaljnije o Milanu" onAction="#ucitaj11">
+    <GridPane.rowIndex>10</GridPane.rowIndex>
+    <GridPane.columnIndex>1</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</Button>
+
+<Button text="Detaljnije o Mihailu" onAction="#ucitaj22">
+    <GridPane.rowIndex>10</GridPane.rowIndex>
+    <GridPane.columnIndex>3</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</Button>
+
+<Label text="" fx:id="porukaP" style="-fx-text-fill: red; -fx-font-size: 20px;">
+    <GridPane.rowIndex>11</GridPane.rowIndex>
+    <GridPane.columnIndex>2</GridPane.columnIndex>
+    <GridPane.columnSpan>2</GridPane.columnSpan>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+
+</GridPane>
+    </center>
+
+</BorderPane>

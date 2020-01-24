@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="15" vgap="15">
+    <Label fx:id="korisnickoimeMG" prefWidth="125">
+        <GridPane.rowIndex>1</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <Label fx:id="imeMG" prefWidth="125">
+        <GridPane.rowIndex>2</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <Label fx:id="prezimeMG" prefWidth="125">
+        <GridPane.rowIndex>3</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <Label fx:id="brojMG" prefWidth="125">
+        <GridPane.rowIndex>4</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <Label fx:id="adresaMG" prefWidth="125">
+        <GridPane.rowIndex>5</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+
+    <Button text="Posalji ocenu" prefWidth="125" onAction="#posaljiocenu">
+        <GridPane.rowIndex>6</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Button>
+    <Spinner fx:id="ocenaZ" min="0" max="10" prefWidth="125">
+        <GridPane.rowIndex>6</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Spinner>
+
+    <Button text="Posalji komentar" prefWidth="125" onAction="#posaljikomentar">
+        <GridPane.rowIndex>7</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Button>
+    <TextField fx:id="komentarZ" prefWidth="125">
+        <GridPane.rowIndex>7</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </TextField>
+
+    <Button text="Podeli na fejsbuku" prefWidth="125" onAction="#podelif">
+        <GridPane.rowIndex>8</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Button>
+    <Button text="Podeli na twitteru" prefWidth="125" onAction="#podelit">
+        <GridPane.rowIndex>8</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Button>
+
+    <Label text="Adresa" prefWidth="125">
+        <GridPane.rowIndex>9</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <TextField fx:id="adresaZ" prefWidth="125">
+        <GridPane.rowIndex>9</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </TextField>
+
+    <Label text="Opstina" prefWidth="125">
+        <GridPane.rowIndex>10</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <TextField fx:id="opstinaZ" prefWidth="125">
+        <GridPane.rowIndex>10</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </TextField>
+
+
+    <RadioButton fx:id="radio1Z" prefWidth="125" text="Gotovina" selected="true">
+        <GridPane.rowIndex>11</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+        <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup1"/>
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="radio2Z" prefWidth="125" text="Racun" toggleGroup="$toggleGroup1">
+        <GridPane.rowIndex>11</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </RadioButton>
+
+    <Button text="Kreiraj zahtev" style="-fx-font-weight: bold; -fx-background-color: green; -fx-text-fill: white;" onAction="#kreirajzahtev">
+        <GridPane.rowIndex>12</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.columnSpan>2</GridPane.columnSpan>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Button>
+
+    <Label text="" fx:id="porukaZ" style="-fx-text-fill: red; -fx-font-size: 20px;">
+        <GridPane.rowIndex>13</GridPane.rowIndex>
+        <GridPane.columnIndex>2</GridPane.columnIndex>
+        <GridPane.columnSpan>2</GridPane.columnSpan>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+
+    <Button text="Nazad" onAction="#nazadddddd" prefWidth="125" >
+        <GridPane.rowIndex>14</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>left</GridPane.halignment>
+    </Button>
+
+    <Button text="Komentari i ocena" prefWidth="125" onAction="#komentariiocena">
+        <GridPane.rowIndex>14</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>left</GridPane.halignment>
+    </Button>
+</GridPane>

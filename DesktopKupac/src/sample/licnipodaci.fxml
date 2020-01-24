@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="12" vgap="12">
+
+    <Label text="Ime">
+        <GridPane.rowIndex>3</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <TextField fx:id="imeM">
+        <GridPane.rowIndex>3</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </TextField>
+    <Label text="Prezime">
+        <GridPane.rowIndex>4</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <TextField fx:id="prezimeM">
+        <GridPane.rowIndex>4</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </TextField>
+    <Label text="Broj">
+        <GridPane.rowIndex>5</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <TextField fx:id="brojM">
+        <GridPane.rowIndex>5</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </TextField>
+    <Label text="Adresa">
+    <GridPane.rowIndex>6</GridPane.rowIndex>
+    <GridPane.columnIndex>0</GridPane.columnIndex>
+    <GridPane.halignment>center</GridPane.halignment>
+</Label>
+    <TextField fx:id="adresaM">
+        <GridPane.rowIndex>6</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </TextField>
+
+    <Label text="Lozinka">
+        <GridPane.rowIndex>7</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <TextField fx:id="lozinkaM">
+        <GridPane.rowIndex>7</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+        <GridPane.halignment>center</GridPane.halignment>
+    </TextField>
+
+    <Button text="Sacuvaj" onAction="#sacuvaj" style="-fx-font-weight: bold; -fx-background-color: green; -fx-text-fill: white;">
+        <GridPane.rowIndex>8</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.columnSpan>2</GridPane.columnSpan>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Button>
+    <Label text="" fx:id="porukaM" style="-fx-text-fill: red; -fx-font-size: 20px;">
+        <GridPane.rowIndex>9</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.columnSpan>2</GridPane.columnSpan>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Label>
+    <Button text="Nazad" onAction="#nazadddddd">
+        <GridPane.rowIndex>10</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+        <GridPane.columnSpan>2</GridPane.columnSpan>
+        <GridPane.halignment>center</GridPane.halignment>
+    </Button>
+</GridPane>
+
+
