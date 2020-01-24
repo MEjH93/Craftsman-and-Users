@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".KupacSearchActivity">
+    <TableRow>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                android:id="@+id/PosaoKS"
+                android:hint="Posao" android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+        />
+        <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                android:id="@+id/CenaOdKS"
+                android:hint="Cena od" android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+        />
+        <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                android:id="@+id/CenaDoKS"
+                android:hint="Cena do" android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+        />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                android:id="@+id/SpecijalneTehnikeKS"
+                android:hint="Tehnike" android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+        />
+        <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                android:id="@+id/OcenaOdKS"
+                android:hint="Ocena od" android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+        />
+        <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                android:id="@+id/OcenaDoKS"
+                android:hint="Ocena do" android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+        />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                android:id="@+id/IskustvoOdKS"
+                android:hint="Iskustvo od" android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+        />
+        <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                android:id="@+id/IskustvoDoKS"
+                android:hint="Iskustvo do" android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+        />
+    </TableRow>
+
+    <TableRow>
+        <EditText android:layout_marginTop="20dp"
+                  android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                  android:id="@+id/DatumOdKS"
+                  android:hint="Datum od" android:layout_marginLeft="10dp"
+                  app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text">
+
+        </EditText>
+        <EditText android:layout_marginTop="20dp"
+                  android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                  android:id="@+id/DatumDoKS" android:layout_marginBottom="20dp"
+                  android:hint="Datum do" android:layout_marginLeft="10dp"
+                  app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text">
+
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+        <CheckBox android:layout_marginTop="0dp"
+                  android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                  android:id="@+id/HitnostKS" android:layout_marginBottom="20dp"
+                  android:hint="Hitnost" android:layout_marginLeft="10dp"
+                  app:layout_constraintVertical_chainStyle="spread_inside"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+                android:text="Pretrazi" android:layout_width="100dp" android:layout_height="50dp"
+                android:id="@+id/PretraziKS"
+                android:layout_marginLeft="10dp"
+        />
+
+        <Button
+                android:text="Nazad" android:layout_width="100dp" android:layout_height="50dp"
+                android:id="@+id/NazadKS"
+                android:layout_marginLeft="10dp" android:layout_marginBottom="20dp"
+        />
+    </TableRow>
+
+</TableLayout>

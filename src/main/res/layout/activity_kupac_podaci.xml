@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto" tools:context=".KupacPodaciActivity">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".KupacPodaciActivity">
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text="Lozinka: "
+        />
+    </TableRow><TableRow>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+                android:id="@+id/LozinkaChange"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+        />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text="Ime: "
+        />
+    </TableRow><TableRow>
+    <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+            android:id="@+id/ImeChange"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+    />
+</TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text="Prezime: "
+        />
+    </TableRow><TableRow>
+    <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+            android:id="@+id/PrezimeChange"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+    />
+</TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text="Adresa: "
+        />
+    </TableRow><TableRow>
+    <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+            android:id="@+id/AdresaChange"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+    />
+</TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text="Broj: "
+        />
+    </TableRow><TableRow>
+    <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp" android:layout_height="50dp" android:ems="10"
+            android:id="@+id/BrojChange"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"
+    />
+</TableRow>
+
+
+    <TableRow>
+        <Button
+                android:text="Sacuvaj"
+                android:id="@+id/SacuvajChange"
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp" app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+    </TableRow>
+
+    <TableRow>
+        <Button
+                android:text="Nazad"
+                android:id="@+id/NazadChange"
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp" app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+    </TableRow>
+
+
+
+
+</TableLayout>
+
+</ScrollView>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto" tools:context=".KupacMajstorActivity">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".KupacMajstorActivity"
+             android:id="@+id/a">
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                  android:layout_width="100dp" android:ems="10"
+                android:id="@+id/Ime"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+    </TableRow><TableRow>
+        <TextView
+                android:layout_marginTop="20dp" android:layout_width="100dp" android:ems="10"
+                android:id="@+id/Prezime"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+     </TableRow><TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                  android:layout_width="100dp" android:ems="10"
+                android:id="@+id/Adresa"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+     </TableRow><TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                  android:layout_width="100dp" android:ems="10"
+                android:id="@+id/Telefon"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+    </TableRow>
+
+    <TableRow>
+        <TextView  android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:id="@+id/POcena"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                  android:layout_width="100dp" android:ems="10"
+                android:id="@+id/Komentar1"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+    </TableRow><TableRow>
+            <TextView
+                      android:layout_marginTop="20dp"
+                      android:layout_width="100dp" android:ems="10"
+                      android:id="@+id/Komentar2"
+                      android:layout_marginLeft="10dp"
+                      app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+            />
+     </TableRow><TableRow>
+            <TextView
+                      android:layout_marginTop="20dp"
+                      android:layout_width="100dp" android:ems="10"
+                      android:id="@+id/Komentar3"
+                      android:layout_marginLeft="10dp"
+                      app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+            />
+    </TableRow>
+
+
+   <TableRow>
+       <TextView
+               android:layout_marginTop="20dp"
+               android:layout_width="100dp" android:ems="10"
+               android:layout_marginLeft="10dp"
+               app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+       />
+   </TableRow>
+
+
+    <TableRow>
+        <EditText
+                android:ems="10"
+                android:id="@+id/Komentar"
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:hint="Komentar"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"/>
+    </TableRow><TableRow>
+        <Button
+                android:text="Posalji"
+                android:layout_width="50dp"
+                android:id="@+id/KomentarB"
+                android:layout_marginLeft="10dp" app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+                android:ems="10"
+                android:id="@+id/Ocena"
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:hint="Ocena"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"/>
+    </TableRow><TableRow>
+        <Button
+                android:text="Posalji"
+                android:layout_width="50dp"
+                android:id="@+id/OcenaB"
+                android:layout_marginLeft="10dp" app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+    </TableRow>
+
+    <TableRow>
+        <Button
+                android:text="Facebook"
+                android:layout_width="50dp"
+                android:id="@+id/Facebook"
+                android:layout_marginLeft="10dp" app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+    </TableRow><TableRow>
+        <Button
+                android:text="Twitter"
+                android:layout_width="50dp"
+                android:id="@+id/Twitter"
+                android:layout_marginLeft="10dp" app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+                android:ems="10"
+                android:id="@+id/AdresaA"
+                android:layout_marginLeft="10dp"
+                android:hint="Adresa"
+                android:layout_width="50dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"/>
+    </TableRow><TableRow>
+        <EditText
+                android:ems="10"
+                android:id="@+id/OpstinaA"
+                android:layout_marginLeft="10dp"
+                android:hint="Opstina"
+                android:layout_width="50dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:inputType="text"/>
+    </TableRow>
+
+    <TableRow>
+        <RadioGroup             android:id="@+id/Grupaaa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginLeft="10dp">
+
+            <RadioButton
+                    android:id="@+id/Gotovina"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Gotovina"
+                    android:checked="true" android:layout_marginLeft="20dp"/>
+
+            <RadioButton
+                    android:id="@+id/Racun"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Racun" android:layout_marginLeft="20dp"/>
+
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+        <Button
+                android:text="Napravi zahtev"
+                android:id="@+id/Zahtev"
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp" app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp" android:ems="10"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintVertical_chainStyle="spread_inside" android:text=""
+        />
+    </TableRow>
+
+    <TableRow>
+        <Button
+                android:text="Nazad na pocetnu"
+                android:id="@+id/Nazad"
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp" app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+    </TableRow>
+
+</TableLayout>
+
+</ScrollView>
