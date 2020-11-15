@@ -1,2 +1,2 @@
-# Majstori-i-Korisnici
-Craftsman and Users - Mainly Java and FXML
+#Craftsman and Users
+Java and FXML(Works in desktop application and on android phones)
